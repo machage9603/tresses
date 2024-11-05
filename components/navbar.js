@@ -10,7 +10,7 @@ export const Navbar = () => {
         <nav className="fixed w-full z-50 top-0 bg-white/80 backdrop-blur-sm dark:bg-black/80">
             <div className="max-w-7xl mx-auto px-4 py-4">
                 <div className="flex items-center justify-between">
-                    <Link href="/" className=" babylonica-regular text-xl font-light tracking-wider dark:text-white">
+                    <Link href="/" className=" font-babylonica text-2xl font-light tracking-wider dark:text-white">
                         OmariShots
                     </Link>
 
@@ -20,6 +20,18 @@ export const Navbar = () => {
                             className="text-sm tracking-wide hover:text-neutral-600 transition-colors dark:text-white dark:hover:text-neutral-300"
                         >
                             Portfolio
+                        </Link>
+                        <Link
+                            href="/about"
+                            className="text-sm tracking-wide hover:text-neutral-600 transition-colors dark:text-white dark:hover:text-neutral-300"
+                        >
+                            About
+                        </Link>
+                        <Link
+                            href="/contact"
+                            className="text-sm tracking-wide hover:text-neutral-600 transition-colors dark:text-white dark:hover:text-neutral-300"
+                        >
+                            Contact
                         </Link>
 
                         <button

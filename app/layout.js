@@ -1,11 +1,11 @@
-// layout.js
-import { Babylonica } from 'next/font/google';
 import localFont from "next/font/local";
 import "./globals.css";
 
-const babylonica = Babylonica({
-  weight: '400',
-  subsets: ['latin'],
+const babylonica = localFont({
+  src: '/fonts/Babylonica-Regular.woff',
+  weight: '900',
+  style: 'normal',
+  variable: '--font-babylonica',
 });
 
 const geistSans = localFont({
@@ -23,7 +23,7 @@ const geistMono = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${babylonica.className}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${babylonica.variable}`}>
         {children}
       </body>
     </html>
