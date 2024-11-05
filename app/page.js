@@ -1,102 +1,98 @@
 "use client";
 import React from "react";
 import { HeroParallax } from "../components/hero-parallax";
+import Head from "next/head";
+import { Navbar } from "../components/navbar";
 
-export default function HeroParallaxDemo() {
-  return <HeroParallax products={products} />;
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>IShootBeautifulImages | Photography Portfolio</title>
+        <meta name="description" content="Discover our stunning photography collection capturing moments, emotions, and stories through the lens." />
+      </Head>
+
+      <Navbar />
+      <HeroParallax products={products} />
+    </>
+  );
 }
+
+// Updated products with higher quality images and more photography-focused content
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    title: "Urban Landscapes",
+    link: "/portfolio/urban",
+    thumbnail: "/images/urban-landscape.jpg", // Replace with your actual image path
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    title: "Portrait Collection",
+    link: "/portfolio/portraits",
+    thumbnail: "/images/portraits.jpg",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
-
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    title: "Nature Series",
+    link: "/portfolio/nature",
+    thumbnail: "/images/nature.jpg",
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+    title: "Street Photography",
+    link: "/portfolio/street",
+    thumbnail: "/images/street.jpg",
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-  },
-
-  {
-    title: "Algochurn",
-    link: "https://algochurn.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+    title: "Architecture",
+    link: "/portfolio/architecture",
+    thumbnail: "/images/architecture.jpg",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+    title: "Black & White",
+    link: "/portfolio/blackandwhite",
+    thumbnail: "/images/blackandwhite.jpg",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+    title: "Fashion",
+    link: "/portfolio/fashion",
+    thumbnail: "/images/fashion.jpg",
   },
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+    title: "Abstract",
+    link: "/portfolio/abstract",
+    thumbnail: "/images/abstract.jpg",
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-  },
-
-  {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+    title: "Travel",
+    link: "/portfolio/travel",
+    thumbnail: "/images/travel.jpg",
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+    title: "Minimalist",
+    link: "/portfolio/minimalist",
+    thumbnail: "/images/minimalist.jpg",
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+    title: "Commercial",
+    link: "/portfolio/commercial",
+    thumbnail: "/images/commercial.jpg",
   },
   {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+    title: "Events",
+    link: "/portfolio/events",
+    thumbnail: "/images/events.jpg",
   },
+  {
+    title: "Fine Art",
+    link: "/portfolio/fineart",
+    thumbnail: "/images/fineart.jpg",
+  },
+  {
+    title: "Documentary",
+    link: "/portfolio/documentary",
+    thumbnail: "/images/documentary.jpg",
+  },
+  {
+    title: "Conceptual",
+    link: "/portfolio/conceptual",
+    thumbnail: "/images/conceptual.jpg",
+  }
 ];
