@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>IShootBeautifulImages | Photography Portfolio</title>
+        <title>OmariShots | Portfolio</title>
         <meta name="description" content="Discover our stunning photography collection capturing moments, emotions, and stories through the lens." />
       </Head>
 
@@ -18,12 +18,12 @@ export default function Home() {
   );
 }
 
-// Updated products with higher quality images and more photography-focused content
+
 export const products = [
   {
     title: "Urban Landscapes",
     link: "/portfolio/urban",
-    thumbnail: "/images/urban-landscape.jpg", // Replace with your actual image path
+    thumbnail: "/uone.jpg",
   },
   {
     title: "Portrait Collection",
@@ -33,66 +33,62 @@ export const products = [
   {
     title: "Nature Series",
     link: "/portfolio/nature",
-    thumbnail: "/images/nature.jpg",
+    thumbnail: "/none.jpg",
   },
   {
     title: "Street Photography",
     link: "/portfolio/street",
-    thumbnail: "/images/street.jpg",
+    thumbnail: "/sone.jpg",
   },
   {
     title: "Architecture",
     link: "/portfolio/architecture",
-    thumbnail: "/images/architecture.jpg",
+    thumbnail: "/aone.jpg",
   },
   {
     title: "Black & White",
     link: "/portfolio/blackandwhite",
-    thumbnail: "/images/blackandwhite.jpg",
+    thumbnail: "/bone.jpg",
   },
   {
     title: "Fashion",
     link: "/portfolio/fashion",
-    thumbnail: "/images/fashion.jpg",
-  },
-  {
-    title: "Abstract",
-    link: "/portfolio/abstract",
-    thumbnail: "/images/abstract.jpg",
+    thumbnail: "/fone.jpg",
   },
   {
     title: "Travel",
     link: "/portfolio/travel",
-    thumbnail: "/images/travel.jpg",
+    thumbnail: "/tone.jpg",
   },
   {
     title: "Minimalist",
     link: "/portfolio/minimalist",
-    thumbnail: "/images/minimalist.jpg",
-  },
-  {
-    title: "Commercial",
-    link: "/portfolio/commercial",
-    thumbnail: "/images/commercial.jpg",
+    thumbnail: "/mone.jpg",
   },
   {
     title: "Events",
     link: "/portfolio/events",
-    thumbnail: "/images/events.jpg",
+    thumbnail: "/eone.jpg",
   },
   {
     title: "Fine Art",
     link: "/portfolio/fineart",
-    thumbnail: "/images/fineart.jpg",
+    thumbnail: "/faone.jpg",
   },
   {
-    title: "Documentary",
-    link: "/portfolio/documentary",
-    thumbnail: "/images/documentary.jpg",
+    title: "Food",
+    link: "/portfolio/food",
+    thumbnail: "/foodone.jpg",
   },
   {
-    title: "Conceptual",
-    link: "/portfolio/conceptual",
-    thumbnail: "/images/conceptual.jpg",
+    title: "Models",
+    link: "/portfolio/models",
+    thumbnail: "/mdone.jpg",
+  },
+  {
+    title: "Studio",
+    link: "/portfolio/studio",
+    thumbnail: "/stone.jpg",
   }
+
 ];

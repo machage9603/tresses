@@ -10,8 +10,8 @@ export const Navbar = () => {
         <nav className="fixed w-full z-50 top-0 bg-white/80 backdrop-blur-sm dark:bg-black/80">
             <div className="max-w-7xl mx-auto px-4 py-4">
                 <div className="flex items-center justify-between">
-                    <Link href="/" className="text-xl font-light tracking-wider dark:text-white">
-                        IShootBeautifulImages
+                    <Link href="/" className=" babylonica-regular text-xl font-light tracking-wider dark:text-white">
+                        OmariShots
                     </Link>
 
                     <div className="flex items-center space-x-8">

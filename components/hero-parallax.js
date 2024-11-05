@@ -3,12 +3,6 @@ import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-// Import the Babylonica font from Google Fonts
-import { Babylonica } from 'next/font/google';
-const babylonica = Babylonica({
-    weight: '400',
-    subsets: ['latin'],
-});
 
 
 export const HeroParallax = ({
@@ -67,8 +61,8 @@ export const HeroParallax = ({
 export const Header = () => {
     return (
         <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
-            <h1 className="babylonica text-2xl md:text-7xl tracking-wider dark:text-white">
-                IShootBeautifulImages
+            <h1 className={`text-2xl md:text-7xl tracking-wider dark:text-white font-babylonica`}>
+                OmariShots
             </h1>
             <div className="flex space-x-6 mt-8">
                 <a
