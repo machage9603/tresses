@@ -28,7 +28,7 @@ export const products = [
   {
     title: "Portrait Collection",
     link: "/portfolio/portraits",
-    thumbnail: "/images/portraits.jpg",
+    thumbnail: "/pone.jpg",
   },
   {
     title: "Nature Series",
